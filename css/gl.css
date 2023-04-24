@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+ /*divvvv*/
+div {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+}
+
+
+
+ /* Смена стилей /белый, черный/*/
+ html.light {
+    --color-bg: hwb(0 92% 8%);
+    --color-text: #c20fefb9;
+
+}
+
+html.dark {
+    --color-bg: #000000d9;
+    --color-text: #ffffffcd;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+
+
+
+ /* смена smena*/
+
+ .smena {
+    display: flex;
+    justify-content: end;
+
+ }
+
+ /* Шапка*/
+
+header {
+    background: linear-gradient(#10100f91, #747070eb);
+
+}
+
+ /* Логотип-IVM*/
+ .ivm {
+    left: 10px;
+    top: 10px;
+  } 
+
+ /* Бегущая строка*/
+.str {
+    display: flex;
+    background: rgba(228, 34, 0, 0.096);
+    height: 65px;
+  }
+  .strr {
+    text-align: end;
+    white-space: normal;
+    font-size: 15px;
+  }
+
+   /* Выпадающие меню*/
+
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #f1f1f1}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #06052927;
+}
+
+
+   /* инфа криптобиржа*/
+
+  .byk {
+    color: #2b00ff;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    width: 325px;
+    column-gap: 25%;
+  }
+   /* инфа криптобиржа  - картинки*/
+  .ob {
+    display: flex;
+    column-gap: 92%;
+    width: 215px;
+  }
+   /* инфа криптобиржа- текст*/
+  .ben {
+    color: #fd2200;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    width: 345px;
+    column-gap: 20%;
+  }
+
+   /*Договоры*/
+
+  .sill {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
